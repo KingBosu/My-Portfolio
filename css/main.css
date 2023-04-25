@@ -1,0 +1,95 @@
+body,
+html {
+  display: grid;
+  grid-template-rows: auto;
+  background-color: lightgrey;
+}
+
+nav li {
+  display: inline-grid;
+  margin: 30px;
+  font-size: large;
+}
+
+nav ul {
+  grid-template-columns: 1fr 1fr 1fr 1fr 4fr;
+  background-color: black;
+  margin: 0px;
+}
+
+nav {
+  color: aqua;
+  list-style-type: none;
+  width: 100%;
+  padding: 0px;
+}
+
+nav a {
+  color: aqua;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: white;
+}
+.hero-image {
+  grid-column-start: 1;
+  grid-column-end: auto;
+  /* border: 5px solid blue; */
+  background-image: url("../Images/lion.jpg");
+  /*  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: absolute;
+  */
+  float: none;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: aqua;
+  text-align: center;
+}
+
+#contents {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.main {
+  /* border: 5px solid red; */
+  /* display: grid;*/
+}
+
+#goals {
+  object-fit: contain;
+}
+.side {
+  /* border: 5px solid red; */
+  /* text-align: right;
+    float: right;
+    width: 25%;
+    height: 50%;
+    position: relative;
+  */
+}
+#aboutme {
+  object-fit: contain;
+  height: 400px;
+  width: auto;
+  grid-template-columns: auto auto;
+}
+#page3 {
+  display: inline-grid;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+  grid-template-columns: auto;
+  word-wrap: normal;
+  float: left;
+  width: 40%;
+}
